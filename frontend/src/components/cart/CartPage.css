@@ -1,0 +1,41 @@
+/* CartPage container */
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Container for all cart items */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Message for loading or empty cart */
+.cart-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 50px;
+}
+
+/* Optional: If you want cart items and summary side by side on larger screens */
+@media (min-width: 768px) {
+  .cart-page {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cart-items {
+    flex: 3; /* takes most of the width */
+  }
+
+  .cart-summary {
+    flex: 1; /* summary on the side */
+    margin-left: 20px;
+  }
+}

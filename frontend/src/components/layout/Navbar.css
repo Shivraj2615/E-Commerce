@@ -1,0 +1,150 @@
+/* Navbar.css */
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Search bar */
+.navbar-search {
+  display: flex;
+  gap: 5px;
+}
+
+.navbar-search-input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.navbar-search-btn {
+  padding: 6px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.navbar-search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Right section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Generic button-style links */
+.navbar-icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.navbar-icon-btn:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Large icons for cart and wishlist */
+.navbar-icon-btn .icon {
+  font-size: 20px;
+}
+
+/* Group for cart and wishlist */
+.navbar-icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Auth buttons (login/register) */
+.navbar-auth {
+  display: flex;
+  gap: 10px;
+}
+
+/* Optional: different color for register button */
+.navbar-icon-btn.register {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.navbar-icon-btn.register:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* User dropdown */
+.navbar-user {
+  position: relative;
+}
+
+.navbar-user-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.navbar-dropdown {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 5px 0;
+  min-width: 140px;
+  z-index: 10;
+}
+
+.navbar-dropdown a,
+.navbar-dropdown button {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.navbar-dropdown a:hover,
+.navbar-dropdown button:hover {
+  background-color: #f1f1f1;
+}
+
+.navbar-dropdown button.logout-btn {
+  color: #ff4d4d;
+}

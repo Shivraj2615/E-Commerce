@@ -1,0 +1,72 @@
+/* Card wrapper */
+.wishlist-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.wishlist-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+/* Book section */
+.wishlist-book {
+  flex-grow: 1;
+}
+
+/* Actions container */
+.wishlist-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Common button */
+.wishlist-btn {
+  flex: 1;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+/* Remove button */
+.remove-btn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.remove-btn:hover {
+  background: #fecaca;
+}
+
+/* Move to cart button */
+.move-btn {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.move-btn:hover {
+  background: #bfdbfe;
+}
+
+/* Click feedback */
+.wishlist-btn:active {
+  transform: scale(0.97);
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .wishlist-actions {
+    flex-direction: column;
+  }
+}

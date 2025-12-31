@@ -1,0 +1,57 @@
+/* Footer.css */
+
+.footer {
+  background-color: #f8f9fa; /* light background */
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border-top: 2px solid #ccc; /* clear footer border */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05); /* subtle shadow on top */
+}
+
+/* Top row buttons */
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap; /* for smaller screens */
+}
+
+.footer-btn {
+  padding: 6px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.footer-btn:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Brand centered */
+.footer-brand {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Bottom copyright */
+.footer-bottom {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .footer-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

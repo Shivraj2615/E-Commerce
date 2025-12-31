@@ -1,0 +1,44 @@
+.profile-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-card h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  font-size: 1rem;
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+.profile-info strong {
+  color: #212529;
+}
+
+.edit-profile-btn {
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.edit-profile-btn:hover {
+  background-color: #0b5ed7;
+}

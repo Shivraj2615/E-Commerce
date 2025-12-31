@@ -1,0 +1,14 @@
+/* OrdersPage.css */
+
+.orders-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.orders-title {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  color: #2c2c2c;
+  font-weight: 600;
+}
